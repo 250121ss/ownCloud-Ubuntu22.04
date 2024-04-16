@@ -49,7 +49,7 @@ None -> Replace -> All
 
 =====
 
-sudo mysql -u root -p
+sudo mysql 
 
 CREATE DATABASE owncloud;
 CREATE USER 'owncloud'@'localhost' IDENTIFIED BY 'your_password';
@@ -75,6 +75,8 @@ unzip owncloud.zip
 sudo ln -sf /home/username/owncloudpath  /var/www/html
 
 ==========  Configure Apache:  ===========
+
+sudo vi /etc/apache2/sites-available/owncloud.conf
 
 <VirtualHost *:80>
     ServerAdmin admin@example.com
